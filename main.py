@@ -7,7 +7,7 @@ playing = True
 while playing:
     play = input("Do you want to play a game of Noughts and Crosses? y or n?\n")
 
-    if play.lower() == "n":
+    if play.lower() != "y":
         print("Bye then!")
         playing = False
         break
