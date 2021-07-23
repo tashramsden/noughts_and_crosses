@@ -89,3 +89,7 @@ class GameManager:
         print(self.game_board)
         print(f"Congratulations! Player {self.current_player} has won!")
 
+    def draw(self):
+        print(self.game_board)
+        print("It's a draw. Better luck next time!")
+

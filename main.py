@@ -1,7 +1,6 @@
 """Command line Noughts and Crosses"""
 
 from game_manager import GameManager
-from replit import clear
 
 playing = True
 
@@ -18,14 +17,13 @@ while playing:
         game_manager = GameManager()
         game_manager.clear_game_board()
         while this_game:
-            clear()
             move_outcome = game_manager.new_move()
             if move_outcome == "WINNER":
                 game_manager.winner()
                 this_game = False
                 break
             elif move_outcome == "DRAW":
-                print("It's a draw. Better luck next time!")
+                game_manager.draw()
                 this_game = False
                 break
             elif move_outcome == "KEEP PLAYING":
